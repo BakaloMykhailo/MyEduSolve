@@ -1,0 +1,76 @@
+@import '../../styles/variables';
+
+.social {
+    padding: 20px;
+    margin-top: 20px;
+
+    &__title {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+
+        
+    &__wrap {
+        padding-top: 18px;
+    }
+
+    &__link-pad {
+        padding-left: 17px;
+    }
+
+    &__list {
+        @media screen and (min-width: 960px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__list-item {
+        a {
+            display: flex;
+            align-items: center;
+        }
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .social {
+        padding: 16px 0 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+
+        &__title {
+            padding: 24px 0 16px;
+            text-align: center;
+        }
+
+        &__wrap {
+            padding-top: 12px;
+        }
+
+        &__termasuk-title {
+            padding: 16px 0 12px;
+            border-top: 1px solid $gray-2;
+            text-align: start;
+        }
+
+        &__link-pad {
+            padding-left: 13px;
+        }
+
+        &__bagikan {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .social.card {
+        box-shadow: none;
+        background-color: $body-bg;
+    }
+
+}

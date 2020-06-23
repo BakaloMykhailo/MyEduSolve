@@ -1,0 +1,43 @@
+.banner {
+    background-image: url('../../static/banner.png');
+    background-size: cover;
+    padding: 97px 0;
+
+    &__title {
+        line-height: 1.28;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+.InfoBanner {
+    display: none;
+    padding-top: 16px;
+
+    &__info {
+        border-bottom: 1px solid $gray-2;
+        padding-bottom: 8px;
+    }
+
+    &__name {
+        padding-left: 9px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner {
+        &__main {
+            display: none;
+        }
+    }
+
+    .InfoBanner {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .banner {
+        height: 151px;
+    }
+}

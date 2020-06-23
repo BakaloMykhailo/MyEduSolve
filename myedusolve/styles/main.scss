@@ -1,0 +1,213 @@
+@import './variables';
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content {
+    &-between {
+        justify-content: space-between;
+    }
+
+    &-center {
+        justify-content: center;
+    }
+
+    &-end {
+        justify-content: flex-end;
+    }
+}
+
+.align-items {
+    &-center {
+        align-items: center;
+    }
+
+    &-end {
+        align-items: flex-end;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+a:hover {
+    color: inherit !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.btn {
+    color: $white;
+    line-height: 1.5;
+    padding: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+    &-pink {
+        background-color: $pink;
+    } 
+
+    &:hover {
+        cursor: pointer;
+        transition: all 0.3s;
+    } 
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.card {
+    background: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+
+    &__title {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray-2;
+    }
+}
+
+span.ant-radio + * {
+    padding-left: 26px;
+}
+
+.ant-radio-checked .ant-radio-inner {
+    border-color: $blue-4 !important;
+    background: radial-gradient(53.57% 53.57% at 50% 50%, #FFFFFF 41.85%, #288AAF 59.38%, rgba(255, 255, 255, 0) 99.99%) !important;
+
+    &:after {
+        background-color: $white;
+    }
+}
+
+.ant-radio .ant-radio-inner {
+    background: $white;
+    border: 1px solid $gray-4;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.ant-radio:hover .ant-radio-inner {
+    border-color: $blue-4 !important;
+}
+
+.ant-dropdown-menu-item > a, .ant-dropdown-menu-submenu-title > a {
+    margin: 0;
+    padding: 16px 104px 16px 22px;
+    color: $black;
+    font-weight: 500;
+}
+
+.ant-dropdown-menu-item.ant-dropdown-menu-item-only-child, .ant-dropdown-menu.ant-dropdown-menu-light.ant-dropdown-menu-root.ant-dropdown-menu-vertical {
+    margin-top: 0 !important;
+}
+
+.ant-dropdown.ant-dropdown-placement-bottomLeft {
+    top: 98px !important;
+    left: 480px !important;
+}
+
+.ant-dropdown-menu-item-divider, .ant-dropdown-menu-submenu-title-divider {
+    margin: 0 12px;
+    background-color: $gray-2;
+}
+
+.ant-dropdown-menu-item > a:hover, .ant-dropdown-menu-submenu-title > a:hover {
+    color: $pink !important;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.text-align-end {
+    text-align: end;
+}
+
+.text-line {
+    text-decoration: line-through;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.navbar-mob, .banner-mob {
+    display: none;
+}
+
+.margin {
+    &-left {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .check-icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .banner-desc {
+        display: none;
+    }
+
+    .navbar-desc {
+        display: none;
+    }
+    
+    .navbar-mob, .banner-mob {
+        display: block;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    span.ant-radio + * {
+        padding-left: 22px;
+    }
+
+    .list, .file {
+        width: 18px;
+        height: 18px;
+    }
+
+    .ant-radio-group.ant-radio-group-outline {
+        padding-left: 16px;
+    }
+}
+
+.def {
+    position: absolute;
+}

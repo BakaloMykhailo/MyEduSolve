@@ -1,0 +1,47 @@
+.person {
+    padding: 17px 24px 20px;
+    margin: 20px 0;
+
+    &__wrap {
+        padding-left: 17px;
+    }
+
+    &__info {
+        padding-left: 16px;
+    }
+
+    &__title {
+        margin-bottom: 2px;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .person {
+        padding: 16px;
+        margin: 16px 0;
+    
+        &__wrap {
+            padding-left: 0;
+            align-items: center;
+        }
+    
+        &__info {
+            padding-left: 35px;
+        }
+    
+        &__main-title {
+            margin-bottom: 0;
+        }
+
+        &__title {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        &__image {
+            height: 60px;
+            width: 60px;
+        }
+    }
+}

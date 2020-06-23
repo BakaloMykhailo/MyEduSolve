@@ -1,0 +1,160 @@
+@import '../../styles/variables';
+
+.bar {
+    padding: 10px 20px 19px;
+    margin-top: -180px;
+    overflow: hidden;
+    
+    &__button {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray-2;
+    }
+
+    &__text {
+        font-size: 12px;
+        padding: 8px 0 16px;
+    }
+}
+
+.ticket {
+    background: rgba(164, 230, 255, 0.19);
+    border-radius: 4px;
+    border-left: 4px solid $blue-3;
+    padding: 7px 20px 6px 10px;
+}
+
+.price {
+    padding-bottom: 8px;
+
+    &__wrap {
+        padding-left: 19px;
+        display: flex;
+    }
+
+    &__old {
+        font-size: 12px;
+        text-decoration: line-through;
+        padding-right: 20px;
+    }
+
+    &__diskon {
+        color: $gray-3;
+        font-size: 12px;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+}
+
+.payment {
+    padding: 20px 0;
+
+    &__info {
+        font-size: 12px;
+        padding-bottom: 12px;
+    }
+
+    &__button {
+        &:first-of-type {
+            padding-bottom: 60px;
+        }
+
+        &:nth-last-of-type(2) {
+            padding-bottom: 50px;
+        }
+    }
+
+    &__image--first {
+        width: 100%;
+        max-width: 73px;
+    }
+
+    &__image--second {
+        width: 100%;
+        max-width: 89px;
+    }
+
+    &__image--last {
+        width: 100%;
+        max-width: 162px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bar {
+        margin-top: -100px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .bar {
+        margin-top: 0;
+        padding: 16px 0 0;
+
+        &__text {
+            padding: 16px 0;
+        }
+
+        &__button {
+            padding-bottom: 24px;
+        }
+    }
+
+    .bar.card {
+        box-shadow: none;
+        border-radius: none;
+        background-color: $body-bg;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        padding-top: 8px;
+
+        &__old {
+            padding-right: 16px;
+        }
+
+        &__wrap {
+            padding-left: 16px;
+        }
+    }
+
+    .ticket {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 9px 12px 9px;
+
+        &__text {
+            padding-right: 5px;
+        }
+    }
+
+    .payment {
+        padding: 16px 0 26px;
+
+        &__button {
+            &:first-of-type {
+                padding-bottom: 26px;
+            }
+    
+            &:nth-last-of-type(2) {
+                padding-bottom: 26px;
+            }
+        }
+    
+        &__image--first {
+            max-width: 41px;
+        }
+    
+        &__image--second {
+            max-width: 52px;
+        }
+    
+        &__image--last {
+            max-width: 101px;
+        }
+    }
+}

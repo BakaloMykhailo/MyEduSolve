@@ -1,0 +1,56 @@
+.info {
+    padding: 18px 24px 33px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &__text {
+        margin-bottom: 14px;
+    }
+
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__button {
+        cursor: pointer;
+    }
+}
+
+.infoItem {
+    &__title {
+        padding:14px 0 3px;
+        margin-bottom: 0;
+    }
+
+    &__item-text {
+        padding-left: 11px;
+        line-height: 1;
+        font-weight: 300;
+    }
+
+    &__list-item {
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .info {
+        padding: 18px 16px 14px;
+        margin-top: 22px;
+        margin-bottom: 18px;
+
+        &__text {
+            margin-bottom: 0;
+        }
+
+        &__title {
+            margin-bottom: 3px;
+        }
+    }
+
+    .infoItem {
+        &__title {
+            padding-top: 10px;
+        }
+    }
+}

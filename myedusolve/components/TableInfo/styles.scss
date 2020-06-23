@@ -1,0 +1,174 @@
+.ant-dropdown-menu-item:hover {
+    background-color: #FFFFFF;
+}
+
+.ant-dropdown-menu-item.ant-dropdown-menu-item-only-child,
+.ant-dropdown-menu.ant-dropdown-menu-light.ant-dropdown-menu-root.ant-dropdown-menu-vertical {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.table {
+
+    .ant-table-ping-right .ant-table-cell-fix-right-first:after,
+    .ant-table-ping-right .ant-table-cell-fix-right-last:after,
+    .ant-table-ping-right:not(.ant-table-has-fix-right) .ant-table-container:after {
+        display: none;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        & svg {
+            margin-right: 8px;
+        }
+    }
+
+    &.ant-table-wrapper {
+        border: 1px solid #DDDDDD;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .ant-table-thead > tr > th {
+        background: #EEFAFF;
+        color:#000000;
+        font-size: 12px;
+        font-weight: 500;
+        padding-top: 11px;
+        padding-bottom: 11px;
+
+        @media screen and (min-width: 576px) {
+            font-size: 16px;
+        }
+
+        
+        &:first-child {
+            padding-left: 48px;
+        }
+
+        &:nth-of-type(2) {
+            padding-left: 42px;
+        }
+
+        &:nth-of-type(3) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 576px) {
+            &:last-child {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 82px;
+            }
+        }
+    }
+
+    .ant-table-row.ant-table-row-level-0 {
+
+        & .ant-table-cell {
+            font-size: 16px;
+            padding-top: 11px;
+            padding-bottom: 10px;
+            font-weight: 300;
+
+            color:#000000;
+
+
+            &:first-child {
+                padding-left: 46px;
+            }
+
+            &:nth-of-type(2) {
+                padding-left: 12px;
+            }
+
+            &:nth-of-type(3) {
+                text-align: center;
+            }
+
+            @media screen and (min-width: 576px) {
+                &:last-child {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-right: 82px;
+                }
+            }
+        }
+    } 
+
+    &--info {
+
+        .ant-table-thead > tr > th {
+            font-size: 14px;
+
+            &:first-child {
+                padding-left: 17px;
+
+                @media screen and (min-width: 576px) {
+                    padding-left: 26px;
+                }
+            }
+    
+            &:last-child {
+                padding-right: 20px;
+            }
+        }
+        .ant-table-row.ant-table-row-level-0 {
+
+            & .ant-table-cell {
+                &:first-child {
+                    padding-left: 17px;
+
+                    @media screen and (min-width: 576px) {
+                        padding-left:26px;
+                    }
+                }
+    
+                &:last-child {
+                    padding-right: 24px;
+                    font-size: 14px;
+                    line-height: 2;
+                    padding-top: 8px;
+                }
+            }
+        }
+    }
+
+    &--schedule {
+        .ant-table-thead > tr > th {
+            &:first-child {
+                @media screen and (max-width: 575px) {
+                    padding-left: 8px;
+                }
+            }
+
+            :nth-of-type(2) {
+                padding-left: 32px;
+            }
+        }
+
+        .ant-table-row.ant-table-row-level-0 {
+            .ant-table-cell {
+                @media screen and (max-width: 575px) {
+                    font-size: 12px;
+                    // padding: 8px;
+                }
+
+                &:first-child {
+                    @media screen and (max-width: 575px) {
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+
+        .ant-table-tbody > tr > td,
+        .ant-table-thead > tr > th,
+        .ant-table tfoot > tr > td,
+        .ant-table tfoot > tr > th {
+            padding: 8px;
+        }
+    }
+
+}

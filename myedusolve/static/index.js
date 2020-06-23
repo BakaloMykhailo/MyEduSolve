@@ -1,0 +1,21 @@
+export { default as Account } from './account';
+export { default as Down } from './down';
+export { default as Instagram } from './instagram';
+export { default as Facebook } from './facebook';
+export { default as Youtube } from './youtube';
+export { default as Twitter } from './twitter';
+export { default as Check } from './check';
+export { default as Whatsapp } from './whatsapp';
+export { default as File } from './file';
+export { default as List } from './list';
+export { default as ArrorRight } from './arrorRight';
+export { default as ArrowLeft } from './arrowLeft';
+export { default as MenuIcon } from './menu';
+export { default as CloseIcon } from './closeIcon';
+
+export { default as MenuAccount } from './manu-account';
+export { default as MenuTwitter} from './menu-twitter';
+export { default as MenuFacebook } from './menu-facebook';
+export { default as MenuInstagram } from './menu-instagram';
+export { default as MenuYoutobe} from './menu-youtobe';
+export { default as Instagramdef} from './instagramdef';

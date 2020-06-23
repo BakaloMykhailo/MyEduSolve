@@ -1,0 +1,33 @@
+// variables
+@import './variables';
+
+// Bootstrap
+@import './bootstrap.scss';
+
+//ANTD
+@import '~antd/dist/antd.min.css';
+
+//Calendar
+@import '~react-day-picker/lib/style.css';
+// Util
+@import './util/typography';
+
+@import './main.scss';
+
+//Import all styles.scss files from /components folder
+@import '../components/Calendar/styles.scss';
+@import '../components/TableInfo/styles.scss';
+@import '../components/Schedule/styles.scss';
+@import '../components/Header/styles.scss';
+@import '../components/Search/styles.scss';
+@import '../components/Banner/styles.scss';
+@import '../components/Footer/style.scss';
+@import '../components/Info/styles.scss';
+@import '../components/Person/styles.scss';
+@import '../components/Bar/styles.scss';
+@import '../components/Button/styles.scss';
+@import '../components/Fitur/styles.scss';
+@import '../components/Tag/styles.scss';
+@import '../components/Social/styles.scss';
+@import '../components/Slider/styles.scss';
+@import '../components/Menu/styles.scss';

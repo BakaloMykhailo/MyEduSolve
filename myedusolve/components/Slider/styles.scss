@@ -1,0 +1,229 @@
+@import '../../styles/variables';
+
+.slider {
+    padding: 80px 55px 0;
+    margin-bottom: 78px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__small-text {
+        padding-bottom: 40px;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 44%;
+        
+        &--left {
+            left: -55px;
+        }
+
+        &--right {
+            right: -55px;
+        }
+    }
+}
+
+.sliderCard {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    
+    &__bg {
+        position: relative;
+        height: 201px;
+        width: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        padding: 8px 0 12px;
+        flex-shrink: 0;
+    }
+
+    &__content-main {
+        padding-top: 20px;
+    }
+
+    &__labelTop {
+        padding-right: 8px;
+
+        &-text {
+            background-color: $blue-5;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 12px;
+            padding: 5px 3px;
+            color: $white;
+        }
+    }
+
+    &__labelBottom {
+        position: absolute;
+        bottom: 12px;
+        right: 0;
+
+        &-text {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            border-radius: 40px 0px 0px 40px;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 8px 25px;
+            color: $white;
+        }
+    }
+
+    &__text {
+        padding-top: 12px;
+    }
+
+    &__content {
+        padding: 8px 20px 27px;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    &__content-bottom {
+        margin-top: auto;
+        padding-top: 20px;
+    }
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $white;
+    border: 0.5px solid $gray-2;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+}
+
+.ant-carousel .slick-dots-bottom {
+    bottom: -42px;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    background: $blue-1;
+    opacity: 1;
+}
+
+.ant-carousel .slick-dots li button {
+    background: $gray-6;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    @media screen and (min-width: 596px) {
+        width: 12px;
+        height: 12px; 
+    }
+}
+
+.ant-carousel .slick-dots li {
+    margin: 0 6px;
+    height: auto;
+    text-align: center;
+}
+
+.slick-slide {
+    padding: 0 10px 0 11px;
+}
+
+.slick-track {
+    padding-bottom: 10px;
+}
+
+.ant-carousel .slick-track {
+    display: flex;
+}
+
+.ant-carousel .slick-list .slick-slide {
+    height: auto;
+
+    & > div {
+        height: 100%;
+    }
+}
+
+.ant-carousel .slick-dots li.slick-active {
+    width: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+    .slider {
+        padding-left: 47px;
+        padding-right: 47px;
+        padding-top: 41px;
+        margin-bottom: 60px;
+    }
+
+    .ant-carousel .slick-dots-bottom {
+        bottom: -24px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .slider {
+        &__small-text {
+            padding-bottom: 20px;
+        }
+
+        &__title {
+            margin-bottom: 12px;
+        }
+    }
+    .sliderCard {
+        &__content {
+            padding: 8px 12px 12px ;
+        }
+
+        &__bg {
+            height: 125px;
+        }
+
+        &__content-main {
+            padding-top: 13px;
+        }
+
+        &__labelTop-text {
+            font-size: 8px;
+            padding: 4px;
+        }
+
+        &__labelBottom-text {
+            font-size: 12px;
+            padding: 3px 12px 2px;
+        }
+
+        &__labelBottom {
+            bottom: 8px;
+        }
+
+        &__price {
+            font-size: 14px;
+        }
+
+        &__content-bottom {
+            margin-top: auto;
+            padding-top: 32px;
+        }
+    }
+
+    .ant-carousel {
+        font-size: 12px;
+    }
+}

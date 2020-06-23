@@ -1,0 +1,150 @@
+@import '../../styles/variables';
+
+.footerTop {
+    background-color: $black;
+    color: $white;
+    padding: 20px 0 30px;
+
+    &__container {
+        padding: 0 136px;
+    }
+
+    &__title {
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+    }
+
+    &__text-title {
+        color: $white;
+        line-height: 1;
+        margin-bottom: 24px;
+        flex-wrap: nowrap;
+    }
+
+    &__text-normal {
+        font-size: 14px;
+        min-width: 100px;
+    }
+
+    &__text-link {
+        display: block;
+        color: $white;
+        line-height: 1.75;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__text-bold {
+        font-weight: 500;
+    }
+
+    &__text-normal {
+        color: $white;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__link {
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: -3px;
+    }
+
+    &__contact {
+        margin-top: -5px;
+    }
+
+    &__contact-link {
+        column-count: 2;
+        column-width: 30px;
+    }
+}
+
+.footerBottom {
+    padding: 13px 0;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+
+    &__container {
+        padding: 0 136px;
+    }
+
+    &__link {
+        font-size: 14px;
+        margin-right: 60px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+    &__social-link {
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        margin-left: 25px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .footerTop {
+        padding: 16px 0;
+        &__container {
+            padding: 0 24px;
+        }
+
+        &__leftBlock {
+            order: 2;
+        }
+
+        &__rightBlock {
+            order: -1;
+        }
+
+        &__text-title {
+            font-size: 24px;
+        }
+
+        &__myedusolve {
+            padding-bottom: 25px;
+        }
+
+        &__title {
+            margin-bottom: 27px;
+        }
+
+        &__contact {
+            padding-top: 40px;
+            padding-bottom: 36px;
+        }
+
+        &__head-office {
+            padding-bottom: 19px;
+        }
+    }
+    .footerBottom {
+        &__container {
+            padding: 0 24px;
+        }
+
+        &__block {
+            display: block;
+        }
+
+        &__links {
+            text-align: center;
+            justify-content: center;
+        }
+    }
+}
